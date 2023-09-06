@@ -1,0 +1,13 @@
+{{!--
+  Used in the post.hbs & page.hbs file
+--}}
+
+<header>
+  <h1>{{ title }}</h1>
+
+  {{#if custom_excerpt}}
+    <p>{{ custom_excerpt }}</p>
+  {{/if}}
+
+  <time datetime='{{ date format='YYYY-MM-DD' }}'><i>{{ date format='MMM D, YYYY' }}</i></time>
+</header>

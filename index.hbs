@@ -1,0 +1,14 @@
+{{!< default}}
+
+{{#if @site.description}}
+  <p>{{ @site.description }}</p>
+{{/if}}
+
+<h2>{{t 'Posts' }}</h2>
+
+{{> loop }}
+
+{{#if next}}
+  <br>
+  {{ pagination }}
+{{/if}}

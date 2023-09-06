@@ -1,0 +1,17 @@
+{{!< default}}
+
+{{#tag}}
+  <header>
+    <h1>{{ name }}</h1>
+
+    {{#if description}}
+      <p>{{ description }}</p>
+    {{/if}}
+  </header>
+{{/tag}}
+
+{{> loop }}
+
+<br>
+
+{{ pagination }}

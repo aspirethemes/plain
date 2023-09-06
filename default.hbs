@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang='{{ @site.locale }}'>
+
+  {{> structure/head }}
+
+  <body class='{{ body_class }}'>
+    {{> structure/header }}
+
+    <main id='main'>
+      {{{ body }}}
+    </main>
+
+    {{> structure/footer }}
+
+    {{ ghost_foot }}
+  </body>
+</html>

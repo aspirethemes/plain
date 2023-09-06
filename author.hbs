@@ -1,0 +1,23 @@
+{{!< default}}
+
+{{#author}}
+<header>
+  <h1>{{ name }}</h1>
+
+  {{#if twitter}}
+    <a href='{{ twitter_url }}'>Twitter</a>
+  {{/if}}
+
+  {{#if facebook}}
+    <a href='{{ facebook_url }}'>Facebook</a>
+  {{/if}}
+
+  {{#if bio}}
+    <p>{{ bio }}</p>
+  {{/if}}
+</header>
+{{/author}}
+
+{{> loop }}
+
+{{ pagination }}

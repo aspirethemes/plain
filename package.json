@@ -1,0 +1,22 @@
+{
+  "name": "plain",
+  "description": "Ghost CMS Theme",
+  "demo": "https://plain.aspirethemes.com/",
+  "version": "1.0.0",
+  "engines": {
+    "ghost": ">=5.0.0"
+  },
+  "keywords": [
+    "ghost-theme"
+  ],
+  "author": {
+    "name": "Aspire Themes",
+    "email": "ahmad@aspirethemes.com",
+    "url": "https://aspirethemes.com/"
+  },
+  "config": {
+    "custom": {},
+    "card_assets": true,
+    "posts_per_page": 15
+  }
+}

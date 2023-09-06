@@ -1,0 +1,15 @@
+<nav aria-label='Social menu'>
+  <ul>
+    {{#if @site.twitter}}
+      <li>
+        <a href='{{ twitter_url }}' class='c-social-link'>Twitter</a>
+      </li>
+    {{/if}}
+
+    {{#if @site.facebook}}
+      <li>
+        <a href='{{ facebook_url }}' class='c-social-link'>Facebook</a>
+      </li>
+    {{/if}}
+  </ul>
+</nav>

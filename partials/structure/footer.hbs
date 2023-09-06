@@ -1,0 +1,16 @@
+<footer class='c-footer'>
+  {{> social-links }}
+
+  {{#if @site.secondary_navigation}}
+    <nav aria-label='Secondary menu'>
+      <ul>{{ navigation type='secondary' }}</ul>
+    </nav>
+  {{/if}}
+
+  <div class='o-grid'>
+    <div class='c-footer-copy'>
+      &copy; {{ date format='YYYY' }} {{ @site.title }} -
+      {{{t 'Published with {ghostLink} & {themeLink}' ghostLink='<a href=\'https://ghost.org\'>Ghost</a>' themeLink='<a href=\'https://aspirethemes.com/\'>Plain</a>' }}}
+    </div>
+  </div>
+</footer>

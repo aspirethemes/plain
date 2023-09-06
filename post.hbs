@@ -1,0 +1,20 @@
+{{!< default}}
+
+{{#post}}
+  {{> page-header }}
+
+  <hr>
+
+  <article class='{{ post_class }}'>
+    {{ content }}
+  </article>
+
+  {{comments title="Join the club"
+           count=false
+           mode="auto"
+           saturation=80}}
+
+  {{#if tags}}
+    {{ tags separator=', ' }}
+  {{/if}}
+{{/post}}
