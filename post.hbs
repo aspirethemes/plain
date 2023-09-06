@@ -9,12 +9,15 @@
     {{ content }}
   </article>
 
-  {{comments title="Join the club"
-           count=false
-           mode="auto"
-           saturation=80}}
-
   {{#if tags}}
     {{ tags separator=', ' }}
+  {{/if}}
+
+  {{#if comments}}
+    <hr>
+    {{comments title="Join the club"
+            count=false
+            mode="auto"
+            saturation=80}}
   {{/if}}
 {{/post}}
